@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 1 Quiz | Tybrandy18 Building</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 700px;
+            margin: 25px auto;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #1f2937;
+            font-weight: bold;
+        }
+
+        .title,
+        .question,
+        #result {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .title h2 {
+            margin-bottom: 8px;
+        }
+
+        .question h3 {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            background: #f1f3f5;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        label:hover {
+            background: #e5e7eb;
+        }
+
+        input {
+            margin-right: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #1f2937;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        #result {
+            display: none;
+            text-align: center;
+        }
+
+        #score {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .retry {
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏗️ TYBRANDY18 BUILDING</h1>
+    <p>Building Technology & Design</p>
+</header>
+
+<div class="container">
+
+    <a href="lesson1.html" class="back">
+        ← Back to Lesson 1
+    </a>
+
+    <div class="title">
+        <h2>📝 Lesson 1 Quiz</h2>
+        <p>What is Building Technology?</p>
+        <p><strong>Total: 10 Marks</strong></p>
+    </div>
+
+    <form id="quizForm">
+
+        <div class="question">
+            <h3>1. What is Building Technology?</h3>
+
+            <label>
+                <input type="radio" name="q1" value="A">
+                A. The study of cooking
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="B">
+                B. The study and practical application of knowledge, skills, tools and materials used in construction
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="C">
+                C. The study of farming
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="D">
+                D. The study of music
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>2. Which of the following is involved in Building Technology?</h3>
+
+            <label>
+                <input type="radio" name="q2" value="A">
+                A. Reading building drawings
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="B">
+                B. Singing
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="C">
+                C. Dancing
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="D">
+                D. Fishing
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>3. Why is Building Technology important?</h3>
+
+            <label>
+                <input type="radio" name="q3" value="A">
+                A. It helps construct safe and durable structures
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="B">
+                B. It teaches people to play football
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="C">
+                C. It is only used for entertainment
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="D">
+                D. It has no purpose
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>4. Which of these is a building material?</h3>
+
+            <label>
+                <input type="radio" name="q4" value="A">
+                A. Cement
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="B">
+                B. Football
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="C">
+                C. Television
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="D">
+                D. Radio
+            </label>
+        </div>
+
+        <div class="question">
+            <h3>5. Building Technology helps produce structures that are:</h3>
+
+            <label>
+                <input type="radio" name="q5" value="A">
+                A. Unsafe and weak
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="B">
+                B. Safe, functional, durable and attractive
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="C">
+                C. Temporary only
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="D">
+                D. Unusable
+            </label>
+        </div>
+
+        <button type="button" onclick="markQuiz()">
+            ✅ SUBMIT QUIZ
+        </button>
+
+    </form>
+
+    <div id="result">
+        <h2>🏆 Your Result</h2>
+
+        <div id="score"></div>
+
+        <p id="message"></p>
+
+        <button class="retry" onclick="location.reload()">
+            🔄 TRY AGAIN
+        </button>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Tybrandy18 Building
+</footer>
+
+<script>
+function markQuiz() {
+
+    const answers = {
+        q1: "B",
+        q2: "A",
+        q3: "A",
+        q4: "A",
+        q5: "B"
+    };
+
+    let score = 0;
+
+    for (let question in answers) {
+
+        const selected = document.querySelector(
+            'input[name="' + question + '"]:checked'
+        );
+
+        if (selected && selected.value === answers[question]) {
+            score += 2;
+        }
+    }
+
+    document.getElementById("quizForm").style.display = "none";
+
+    document.getElementById("result").style.display = "block";
+
+    document.getElementById("score").innerHTML =
+        score + " / 10";
+
+    if (score >= 5) {
+
+        document.getElementById("message").innerHTML =
+            "🎉 Congratulations! You passed the quiz. Keep learning!";
+
+    } else {
+
+        document.getElementById("message").innerHTML =
+            "📚 You did not pass this time. Review Lesson 1 and try again.";
+    }
+}
+</script>
+
+</body>
+</html>
