@@ -1,0 +1,9 @@
+<div class="card">
+    <h3>📝 Test Your Knowledge</h3>
+    <p>Complete the Lesson 1 quiz and get your score automatically.</p>
+
+    <a href="quiz1.html"
+       style="display:block;text-align:center;background:#1f2937;color:white;padding:15px;border-radius:10px;text-decoration:none;font-weight:bold;">
+        📝 TAKE QUIZ
+    </a>
+</div>
